@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ProductList from './pages/productList/ProductList'
-import ProductDetails from './pages/productDetails/ProductDetails'
-import CartList from './pages/cartList/CartList'
+import ProductListPage from './pages/productList/index'
+import ProductDetailsPage from './pages/productDetails/index'
+import CartListPage from './pages/cartList/index'
 
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
   return (
     <Fragment>
       <Routes>
-        <Route path='/product-list' element={<ProductList/>} />
-        <Route path='/product-details/:id' element={<ProductDetails/>} />
-        <Route path='/cart' element={<CartList/>} />
+      <Route path="/products" element={<ProductListPage />} />
+        <Route path="/product-details/:id" element={<ProductDetailsPage />} />
+        <Route path="/cart" element={<CartListPage />} />
       </Routes>
 
     </Fragment>

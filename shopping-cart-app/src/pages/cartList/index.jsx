@@ -16,10 +16,13 @@ function CartListPage() {
         <div className="md:col-span-2 space-y-4">
           {cartItems?.length ? (
             cartItems.map((singleCartItem) => (
-              <CartTile singleCartItem={singleCartItem} />
+              <CartTile 
+                key={singleCartItem.id} 
+                singleCartItem={singleCartItem} 
+              />
             ))
           ) : (
-            <h1>No items available in cart!Please add some items</h1>
+            <h1>No items available in cart! Please add some items</h1>
           )}
         </div>
         <div className="bg-gray-100 rounded-sm p-4 h-max">

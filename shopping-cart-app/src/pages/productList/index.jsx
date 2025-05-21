@@ -20,7 +20,10 @@ function ProductListPage() {
         <div className="grid grid-cols-2 gap-5 mt-10 lg:mt-16 lg:gap-8 lg:grid-cols-4">
           {listOfProducts && listOfProducts.length > 0 ? (
             listOfProducts.map((singleProductTile) => (
-              <ProductTile singleProductTile={singleProductTile} />
+              <ProductTile 
+                key={singleProductTile.id} 
+                singleProductTile={singleProductTile} 
+              />
             ))
           ) : (
             <h3>No Products Found</h3>

@@ -24,7 +24,7 @@ Follow these steps to set up the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/react-shopping-cart.git
+git clone https://github.com/rkrishan99/react-shopping-cart.git
 
 # Navigate to project directory
 cd react-shopping-cart
